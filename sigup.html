@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        form {
+            margin-top: 5%;
+            border: 3px solid #f1f1f1;
+        }
+        
+        h2 {
+            margin-top: 12px;
+            text-align: center;
+        }
+        
+        input[type=text],
+        input[type=password] {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        button:hover {
+            opacity: 0.8;
+        }
+        
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+        
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+        
+        .container {
+            padding: 16px;
+        }
+        
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+        /* Change styles for span and cancel button on extra small screens */
+        
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="imageslogo.png" class="logo">
+        <div class="navigation">
+            <ul>
+                <a id="menu-close" class="fa fa-times"></a>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="burger-bar.png" alt="">
+        </div>
+    </nav>
+    <!-- HOME -->
+    <section id="about-home">
+        <h2>Login Page/</h2>
+    </section>
+    <h2>Login Form</h2>
+
+    <form action="/action_page.php" method="post">
+        <div class="imgcontainer">
+            <img src="login12.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed website</li>
+            <li>Marketing Service</li>
+            <li>Experts</li>
+
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brond Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Service</li>
+            <li>Guides</li>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed website</li>
+            <li>Research</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us. we only send promo offers,</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email address">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+            <div class="copyright">
+                <p>Copyright 02022 All rights reserved | This template is made by Rameshwar Mishra</p>
+                <br>
+                <div class="pro-link"></div>
+                <a class="fa fa-facebook-f"></a>
+                <a class="fa fa-instagram"></a>
+                <a class="fa fa-linkedin"></a>
+
+            </div>
+        </div>
+    </footer>
+    <script>
+        $('#menu-btn').click(function() {
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#menu-close').click(function() {
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+</body>
+
+</html>
